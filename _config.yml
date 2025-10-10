@@ -2,22 +2,22 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Sound Affairs # the website title (if blank, full name will be used instead)
-first_name: Sound
-middle_name: 
-last_name: Affairs
-email: soundaffairs-fgw@uva.nl
+title: Amsterdam Computational History Lab # the website title (if blank, full name will be used instead)
+first_name: ACHL
+middle_name:
+last_name:
+email:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A project website for the Sound Affairs Project.
+  A project website for the Amsterdam Computational History Lab.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: sonic history, sound studies, international affairs # add your own keywords or leave empty
+keywords: computational history, research lab, computer vision # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon-32x32.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://sound-affairs.github.io # the base hostname & protocol for your site
-baseurl: 
+url: https://ACHL.github.io # the base hostname & protocol for your site
+baseurl:
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 
@@ -66,11 +66,11 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: sound-affairs
+github_username: melvinwevers
 linkedin_username: # your LinkedIn user name
 osf_id: # your OSF ID
 research_gate_profile: # your profile on ResearchGate
-instagram_id: soundaffairs_uva
+instagram_id: # soundaffairs_uva
 
 
 contact_note: >
@@ -94,8 +94,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Sonic History Blogs # blog_name will be displayed in your blog page
-blog_description: 
+blog_name: Amsterdam Computational History Lab Blogs # blog_name will be displayed in your blog page
+blog_description:
 permalink: /blog/:year/:title/
 
 # Pagination

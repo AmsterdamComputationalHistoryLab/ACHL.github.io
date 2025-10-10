@@ -2,23 +2,26 @@
 layout: about
 title: About
 permalink: /
-subtitle: Sonic Histories of Foreign Relations, 1700-1990
+subtitle:
 
 profile:
   align: right
-  image: logo-sound-affairs.jpg
+  image: ACHL.png
   image_circular: true # crops the image to make it circular
   more_info: >
 
 
 news: true # includes a list of news items
-latest_posts: true # includes a list of the newest posts
+latest_posts: false # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-How do noise or silence affect the form and texture of interstate relations? Did new sound technologies alter the ways policy makers and field diplomats conducted their business? Can we recreate the silences, hissing, yelling, or whispering of multilateral conferences? How can we hear the voices of all those silenced non-state and semi-official actors that moved in, against, and out of the formal worlds of diplomacy? How, in short, to think about the sounds of foreign relations? It is these questions that animate the research project _Sound Affairs: Sonic Histories of Foreign Relations, 1700-1990_. The project also sounds out the potential and methods of digital history in conceiving new sonic histories of diplomacy and IR.
+The Computational History Lab advances historical research through rigorous computational methods including multimodal analysis, machine learning, text mining, and network analysis. We develop and apply both quantitative and qualitative computational approaches to expand what questions historians can ask and how they can answer them.
 
+Our lab takes a theory and method-focused approach to historical research, bridging history with data science, cognitive science, and visual studies. We believe computational methods are not merely tools for traditional research but enable fundamentally new ways of understanding the past.
+
+Based at the University of Amsterdam and embedded within the Amsterdam School of Historical Studies and the Humanities Labs, we pursue an interdisciplinary research agenda while training the next generation of computationally skilled historians. We collaborate closely with heritage institutions to develop new methodologies, host visiting researchers, and create teaching materials that advance computational approaches across the historical disciplines.
 
 
 

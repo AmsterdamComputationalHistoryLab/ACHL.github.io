@@ -43,7 +43,7 @@ layout: default
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">Updates</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -65,14 +65,12 @@ layout: default
     {% endif %}
 
     <!-- Social -->
-    {% include newsletter.liquid %}
     {% if page.social %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
 
         <div class="contact-note">{{ site.contact_note }}
         </div>
-        <img src="{{ '/assets/img/uvalogo.jpg' | relative_url }}" alt="Logo" class="footer-logo">
       </div>
     {% endif %}
   </article>

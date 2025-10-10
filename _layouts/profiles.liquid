@@ -3,34 +3,151 @@ layout: page
 ---
 <div class="post">
   <article>
-    {% if page.profiles %}
-      {% for profile in page.profiles %}
-        <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid path = profile_image_path class = profile_image_class sizes = sizes alt = profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
-        </div>
+    {{ content }}
 
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
-        </div>
-      {% endfor %}
+    {% if page.lab_directors %}
+      <h2>Lab Directors</h2>
+      <div class="row">
+        {% for profile in page.lab_directors %}
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                {% if profile.image %}
+                  {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                  <img src="{{ profile_image_path | relative_url }}" class="card-img-top mx-auto d-block mb-3" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%;" alt="{{ profile.name }}">
+                {% else %}
+                  <div class="mx-auto d-block mb-3" style="width: 150px; height: 150px; background-color: #f8f9fa; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa-solid fa-user" style="font-size: 4rem; color: #6c757d;"></i>
+                  </div>
+                {% endif %}
+                {% if profile.content %}
+                  {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                  {{ profile_content | markdownify }}
+                {% else %}
+                  <h5 class="card-title">{{ profile.name }}</h5>
+                  <p class="card-text">{{ profile.description }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if page.affiliated_researchers %}
+      <h2>Affiliated Researchers</h2>
+      <div class="row">
+        {% for profile in page.affiliated_researchers %}
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                {% if profile.image %}
+                  {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                  <img src="{{ profile_image_path | relative_url }}" class="card-img-top mx-auto d-block mb-3" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;" alt="{{ profile.name }}">
+                {% else %}
+                  <div class="mx-auto d-block mb-3" style="width: 120px; height: 120px; background-color: #f8f9fa; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa-solid fa-user" style="font-size: 3rem; color: #6c757d;"></i>
+                  </div>
+                {% endif %}
+                {% if profile.content %}
+                  {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                  {{ profile_content | markdownify }}
+                {% else %}
+                  <h6 class="card-title">{{ profile.name }}</h6>
+                  <p class="card-text small">{{ profile.description }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if page.postdocs %}
+      <h2>Postdocs</h2>
+      <div class="row">
+        {% for profile in page.postdocs %}
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                {% if profile.image %}
+                  {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                  <img src="{{ profile_image_path | relative_url }}" class="card-img-top mx-auto d-block mb-3" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;" alt="{{ profile.name }}">
+                {% else %}
+                  <div class="mx-auto d-block mb-3" style="width: 120px; height: 120px; background-color: #f8f9fa; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa-solid fa-user" style="font-size: 3rem; color: #6c757d;"></i>
+                  </div>
+                {% endif %}
+                {% if profile.content %}
+                  {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                  {{ profile_content | markdownify }}
+                {% else %}
+                  <h6 class="card-title">{{ profile.name }}</h6>
+                  <p class="card-text small">{{ profile.description }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if page.phd_students %}
+      <h2>PhD Students</h2>
+      <div class="row">
+        {% for profile in page.phd_students %}
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                {% if profile.image %}
+                  {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                  <img src="{{ profile_image_path | relative_url }}" class="card-img-top mx-auto d-block mb-3" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;" alt="{{ profile.name }}">
+                {% else %}
+                  <div class="mx-auto d-block mb-3" style="width: 120px; height: 120px; background-color: #f8f9fa; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa-solid fa-user" style="font-size: 3rem; color: #6c757d;"></i>
+                  </div>
+                {% endif %}
+                {% if profile.content %}
+                  {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                  {{ profile_content | markdownify }}
+                {% else %}
+                  <h6 class="card-title">{{ profile.name }}</h6>
+                  <p class="card-text small">{{ profile.description }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if page.visiting_researchers %}
+      <h2>Visiting Researchers</h2>
+      <div class="row">
+        {% for profile in page.visiting_researchers %}
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                {% if profile.image %}
+                  {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                  <img src="{{ profile_image_path | relative_url }}" class="card-img-top mx-auto d-block mb-3" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;" alt="{{ profile.name }}">
+                {% else %}
+                  <div class="mx-auto d-block mb-3" style="width: 120px; height: 120px; background-color: #f8f9fa; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa-solid fa-user" style="font-size: 3rem; color: #6c757d;"></i>
+                  </div>
+                {% endif %}
+                {% if profile.content %}
+                  {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
+                  {{ profile_content | markdownify }}
+                {% else %}
+                  <h6 class="card-title">{{ profile.name }}</h6>
+                  <p class="card-text small">{{ profile.description }}</p>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
     {% endif %}
   </article>
 </div>

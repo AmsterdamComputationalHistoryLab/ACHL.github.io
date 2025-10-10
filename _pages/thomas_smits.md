@@ -1,0 +1,3 @@
+# Thomas Smits
+
+Thomas Smits is an assistant professor of digital history and artificial intelligence at the University of Amsterdam. A historian of visual culture with an interest in digital methodologies, especially multimodal AI techniques, he is author of the prize-winning The European Illustrated Press and the Emergence of a Transnational Visual Culture of the News, 1842-1870 (2020). Recent work focusses on the visual representation of war, (iconic) protest images, and early color photography and was published in New Media and Society, Humanities and Social Sciences Communications, Visual Studies, and the Journal of Historical Geography.
