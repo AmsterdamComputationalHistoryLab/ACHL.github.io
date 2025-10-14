@@ -18,6 +18,8 @@ layout: default
     </div>
   {% endif %}
 
+  {% include related_news.liquid %}
+
   {% if site.giscus and page.giscus_comments %}
     {% include giscus.liquid %}
   {% endif %}

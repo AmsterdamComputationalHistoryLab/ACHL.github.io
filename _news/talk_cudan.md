@@ -3,6 +3,7 @@ layout: post
 title: Melvin Wevers to Present at CUDAN Open Lab Seminar
 date: 2025-10-06 16:11:00-0400
 inline: false
+tags: [talk]
 related_posts: false
 ---
 

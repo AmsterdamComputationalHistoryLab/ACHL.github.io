@@ -3,9 +3,10 @@ layout: page
 title: Datafying Amsterdam's Housing History
 description: Unlocking Woningkaarten for Urban History
 img: assets/img/woningkaarten.jpg
+tags: [woningkaarten, amsterdam, urban-history, computer-vision]
 importance: 1
 category: work
-related_publications: false
+related_publications: true
 ---
 
 

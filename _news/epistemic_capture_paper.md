@@ -3,7 +3,8 @@ layout: post
 title: Epistemic Capture - New Paper on Specialization in Dutch Parliament
 date: 2025-10-07 16:11:00-0400
 inline: false
-related_posts: false
+tags: [chr, network-analysis]
+related_posts: true
 ---
 
 Our latest research reveals how parliamentary debate in the Netherlands became progressively narrower between 1945 and 1995 as MPs turned into domain specialists. The paper "Epistemic capture through specialization in post-World War II parliamentary debate" is now available in [Computational Humanities Research](https://www.cambridge.org/core/journals/computational-humanities-research)

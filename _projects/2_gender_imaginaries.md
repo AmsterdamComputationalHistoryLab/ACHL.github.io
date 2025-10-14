@@ -3,6 +3,7 @@ layout: page
 title: Visual Imaginaries of Gender
 description: The potentials and limitations of GenAI
 img: assets/img/gender-ai.jpg
+tags: [genai, gender, computer-vision, bias]
 importance: 1
 category: work
 related_publications: false
